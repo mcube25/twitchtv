@@ -1,0 +1,45 @@
+body {
+  text-align: center;
+  background-color: #f3f3f3;
+  font-family: "Gugi", cursive;
+  color: #000;
+}
+
+h1 {
+  background-color: #4a4e59;
+  color: #f0f0f0;
+  padding: 1em;
+  width: 71%;
+  display: inline-block;
+}
+
+em {
+  color: #fe8282;
+}
+
+.display {
+  margin-top: 20px;
+}
+
+table {
+  color: #000;
+}
+
+table,
+th,
+td {
+}
+
+th {
+}
+
+.footer-text {
+  font-size: 0.75em;
+  margin-top: 20px;
+
+}
+
+#spill {
+  margin: 0 auto;
+  width: 75%;
+}
