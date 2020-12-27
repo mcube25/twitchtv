@@ -1,37 +1,45 @@
-  <!DOCTYPE>
-  <html lang="en" >
+<!DOCTYPE html>
+<html>
   <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, minimal-ui" />
     <meta charset="utf-8">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="app.js"></script>
-     <script src="https://embed.twitch.tv/embed/v1.js"></script>
-    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Twitch Client</title>
   </head>
-    <body>
-      <h1>
-        Twitch.tv API Project
-      </h1>
-
-
-        <div id="twitch-embed"></div>
-
-        <div>
-          <table id="twitchStreams" class="display">
-            <thead>
-              <tr>
-                <th>Name</th>
-                <th>Status</th>
-              </tr>
-            </thead>
-            <tbody>
-
-            </tbody>
-          </table>
+  <body>
+    <div class="wrapper">
+      <div class="twitchbox">
+        <div class="twitch-head">
+          <a id="ticon" href="https://www.twitch.tv/" target="_blank" style="font-size: 1.5em;"><i class="fa fa-twitch"></i></a>
+          <h1>twitch streams</h1>
+        </div>
+        <div class="twitch-nav">
+          <button type="button" name="all" class="twitchtoggle" id="alltab">all</button>
+          <button type="button" name="on" class="twitchtoggle" id="ontab">online</button>
+          <button type="button" name="off" class="twitchtoggle" id="offtab">offline</button>
+        </div>
+        <div class="twitch-body">
+          <div class="online">
+            <div class="onbox"></div>
+          </div>
+          <div class="offline">
+            <div class="offbox"></div>
+          </div>
         </div>
       </div>
-        <div class="footer-text"> Written and coded by <a href="https://" target="_blank">CubicDesign</a> 2020</div>
-      </body>
-      </html>
+    </div>
+    <footer id="pagebottom">
+      <div id="contact">
+        <p>by CubicDesign</p>
+      </div>
+      <div id="social">
+        <a href="https://www.linkedin.com/in/daniel-nguyen-1a041495/" target="_blank"><i class="fa fa-linkedin-square" style="font-size: 1.5em;"></i></a>
+        <a href="https://github.com/ziggysauce" target="_blank"><i class="fa fa-github" style="font-size: 1.5em;"></i></a>
+        <a href="https://codepen.io/ziggysauce/" target="_blank"><i class="fa fa-codepen" style="font-size: 1.5em;"></i></a>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
